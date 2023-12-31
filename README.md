@@ -29,3 +29,8 @@ numid=3,iface=CARD,name='Speaker Digital Gain'
 To make the amp speakers change volume in sync with the volume of the main speakers - use https://github.com/darinpp/alsa-controller
 It will update the digital gain for the amp speakers when the main speaker's volume changes.
 There is an included config for the alsa-controller service with the correct source and destination included.
+
+# Keyboard
+to be added
+i8042 dumbkbd is needed
+caps and numlock indicators will not work
