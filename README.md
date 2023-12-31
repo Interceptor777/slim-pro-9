@@ -2,7 +2,7 @@
 Fixes and patches for Linux on the Lenovo Slim Pro 9 16IRP8
 
 # Audio
-To make the subwoofer's work need the following:
+To make the subwoofer's work you need the following:
 #### Disable driver runtime suspend/resume PM
 as root (if rc.local doesn't exit - create, make executable and add `#!/bin/sh`)
 ```
@@ -14,7 +14,7 @@ EOF
 On Fedora the rc.local file is `/etc/rc.d/rc.local`
 
 #### Place the firmware in /lib/firmware
-The files `TIAS2781RCA4.bin` and `TAS2XXX38BB.bin` need to be copies in `/lib/firmware`
+The files `TIAS2781RCA4.bin` and `TAS2XXX387D.bin` need to be copies in `/lib/firmware`
 
 #### Controling subwoofer speakers volume
 By default the normal speaker volume controls don't control the volume of the subwoofer's. 
