@@ -1,0 +1,14 @@
+[Unit]
+Description=alsa-controller
+After=syslog.target sound.target
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sleep 2
+ExecStart=/usr/local/bin/alsa-controller -s name="Master Playback Volume" -d iface=CARD,name="Speaker Digital Gain" --src_hw hw:0  
+Restart=always
+RestartSec=1
+User=ali
+
+[Install]
+WantedBy=multi-user.target
